@@ -1,0 +1,6 @@
+boto3
+psutil
+streamlit
+pandas
+plotly
+decimal

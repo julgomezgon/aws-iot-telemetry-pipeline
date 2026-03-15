@@ -1,0 +1,26 @@
+# --- Terraform ---
+# Ignora la carpeta de plugins (pesa mucho)
+.terraform/
+
+# Ignora los archivos de estado (TIENEN INFO SENSIBLE)
+*.tfstate
+*.tfstate.*
+
+# Ignora el archivo de bloqueo de variables
+.terraform.lock.hcl
+
+# --- Python ---
+__pycache__/
+*.py[cod]
+*$py.class
+.venv
+venv/
+ENV/
+
+# --- IDEs ---
+.idea/
+.vscode/
+
+# --- OS ---
+.DS_Store
+Thumbs.db

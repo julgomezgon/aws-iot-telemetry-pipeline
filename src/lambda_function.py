@@ -22,7 +22,6 @@ def lambda_handler(event, context):
             payload = base64.b64decode(record['kinesis']['data']).decode('utf-8')
             
             # 2. Parse JSON converting floats to Decimals (Crucial for DynamoDB)
-            # This 'parse_float=Decimal' fixes the error you saw in the logs
             data = json.loads(payload, parse_float=Decimal)
             
             device_id = data.get('device_id', 'Unknown')
